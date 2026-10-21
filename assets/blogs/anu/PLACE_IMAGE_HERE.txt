@@ -1,0 +1,8 @@
+Add the Twelve Apostles image to this folder using exactly this filename:
+
+twelve-apostles.jpg
+
+Final path used by the website:
+assets/blogs/anu/twelve-apostles.jpg
+
+Once the image is added, this text file can be deleted.
