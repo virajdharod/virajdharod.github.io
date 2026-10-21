@@ -194,10 +194,18 @@ main { padding-top: var(--header-height); background: #ffffff; min-height: calc(
   transition: transform .18s ease, border-color .18s ease, background .18s ease;
 }
 .button:hover { transform: translateY(-2px); }
-.button-primary { background: var(--accent-dark); color: #fff; }
-.button-primary:hover { background: #17364f; }
-.button-secondary { background: #fff; color: var(--text); border-color: #d8dde3; }
-.button-secondary:hover { border-color: #aeb7c0; background: #ffffff; }
+.button-primary,
+.button-secondary {
+  background: #ffffff;
+  color: var(--text);
+  border-color: #d8dde3;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  background: #f7f9fb;
+  border-color: #aeb7c0;
+}
 .profile-links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 25px; }
 .profile-links a { color: var(--accent-dark); font-size: 13px; font-weight: 700; }
 .profile-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
