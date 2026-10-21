@@ -34,3 +34,5 @@ A neutral placeholder appears if neither file exists.
 6. Select `main` and `/ (root)`, then save.
 
 The site uses relative links and also works from a project repository such as `https://<username>.github.io/portfolio/`.
+
+Why does this need a commit to publish?
