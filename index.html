@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Viraj Dharod — Experimental Quantum Physicist working on quantum hardware, photonics, cryogenic measurement, and experimental automation." />
-  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Viraj Dharod — Experimental quantum physicist working on quantum hardware, photonics, cryogenic measurement, and experimental automation." />
+  <meta name="theme-color" content="#ffffff" />
   <title>Viraj Dharod — Experimental Quantum Physicist</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,331 +13,58 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-bg" aria-hidden="true">
-    <div class="orb orb-one"></div>
-    <div class="orb orb-two"></div>
-    <div class="grid-fade"></div>
-  </div>
-
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Viraj Dharod home">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Viraj Dharod home">
       <span class="brand-mark">VD</span>
       <span class="brand-copy"><strong>Viraj Dharod</strong><small>Experimental Quantum Physicist</small></span>
     </a>
-
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#education">Education</a>
-      <a class="nav-cta" href="#contact">Contact</a>
+      <a class="active" href="index.html">About</a>
+      <a  href="experience.html">Experience</a>
+      <a  href="research.html">Research &amp; Publications</a>
+      <a  href="education.html">Education</a>
+      <a  href="contact.html">Contact</a>
+      <a  href="blogs.html">Blogs</a>
     </nav>
-  </header>
-
-  <main>
-    <section class="hero section-shell" aria-labelledby="hero-title">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Quantum hardware · Photonics · Experimental systems</p>
-        <h1 id="hero-title">Viraj Dharod</h1>
-        <p class="hero-role">Experimental Quantum Physicist</p>
-        <p class="hero-intro">
-          I build and automate experimental quantum and photonic hardware, from optical and RF systems
-          to cryogenic measurement platforms and quantitative device characterization.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#contact">Get in touch</a>
-          <a class="button button-secondary" href="assets/Viraj_Dharod_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
-        </div>
-        <div class="hero-links" aria-label="External profiles">
-          <a href="https://www.linkedin.com/in/viraj-dharod-436347167/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://scholar.google.com/citations?user=QQZvT2IAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
-        </div>
+  </div>
+</header>
+<main>
+  <section class="page-shell about-landing fade-in" aria-labelledby="about-title">
+    <div class="about-copy">
+      <p class="page-kicker">Quantum hardware · Photonics · Experimental systems</p>
+      <h1 id="about-title">Viraj Dharod</h1>
+      <p class="about-role">Experimental Quantum Physicist</p>
+      <p class="about-intro">
+        I build and automate experimental quantum and photonic hardware, from optical and RF systems to cryogenic measurement platforms and quantitative device characterization.
+      </p>
+      <p class="about-detail">
+        I am a final-year Ph.D. candidate in Physics at the University of California, Santa Barbara, with more than five years of experience in quantum hardware engineering and applied device physics.
+      </p>
+      <p class="about-detail">
+        My work spans experiment design, fiber and free-space optics, RF and electronic instrumentation, cryogenic integration, measurement automation, modeling, troubleshooting, and analysis. I am most at home where device physics meets the practical work of making a complex experiment reliable.
+      </p>
+      <div class="about-actions">
+        <a class="button button-primary" href="contact.html">Get in touch</a>
+        <a class="button button-secondary" href="assets/Viraj_Dharod_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
       </div>
-
-      <div class="hero-visual reveal" aria-label="Abstract quantum photonics illustration">
-        <div class="visual-card">
-          <div class="visual-label">Experimental stack</div>
-          <svg class="quantum-graphic" viewBox="0 0 520 520" role="img" aria-label="Stylized optical and mechanical resonator illustration">
-            <defs>
-              <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#87e8ff" />
-                <stop offset="100%" stop-color="#8b9dff" />
-              </linearGradient>
-              <radialGradient id="glow">
-                <stop offset="0%" stop-color="#87e8ff" stop-opacity="0.55" />
-                <stop offset="100%" stop-color="#87e8ff" stop-opacity="0" />
-              </radialGradient>
-            </defs>
-            <circle cx="260" cy="260" r="160" fill="url(#glow)" opacity="0.38"/>
-            <ellipse cx="260" cy="260" rx="160" ry="82" fill="none" stroke="url(#ring)" stroke-width="3" opacity="0.9"/>
-            <ellipse cx="260" cy="260" rx="82" ry="160" fill="none" stroke="url(#ring)" stroke-width="2" opacity="0.55" transform="rotate(28 260 260)"/>
-            <ellipse cx="260" cy="260" rx="128" ry="128" fill="none" stroke="#b9c9ff" stroke-width="1.5" stroke-dasharray="7 11" opacity="0.42"/>
-            <path d="M132 260 C176 205, 205 323, 260 260 S345 205, 388 260" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
-            <path d="M132 282 C180 335, 205 215, 260 282 S340 335, 388 282" fill="none" stroke="#87e8ff" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
-            <circle cx="132" cy="260" r="8" fill="#87e8ff"/>
-            <circle cx="388" cy="260" r="8" fill="#8b9dff"/>
-            <circle cx="260" cy="260" r="19" fill="#07111f" stroke="#ffffff" stroke-width="2"/>
-            <circle cx="260" cy="260" r="6" fill="#ffffff"/>
-          </svg>
-          <div class="visual-tags">
-            <span>Optics</span><span>Cryogenics</span><span>RF</span><span>Automation</span>
-          </div>
+      <div class="profile-links" aria-label="External profiles">
+        <a href="https://www.linkedin.com/in/viraj-dharod-436347167/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://scholar.google.com/citations?user=QQZvT2IAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait-frame">
+        <img id="profile-image" src="self.png" alt="Portrait of Viraj Dharod" />
+        <div class="portrait-placeholder">
+          <div>Add your portrait to the repository root as <strong>self.png</strong> or <strong>self.jpg</strong>.</div>
         </div>
       </div>
-    </section>
-
-    <section class="section-shell section-block" id="about">
-      <div class="section-heading reveal">
-        <p class="eyebrow">About</p>
-        <h2>Building quantum experiments end to end.</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p>
-            I am a final-year Ph.D. candidate in Physics at the University of California, Santa Barbara,
-            with more than five years of experience in quantum hardware engineering and applied device physics.
-          </p>
-          <p>
-            My work spans experiment design, fiber and free-space optics, RF and electronic instrumentation,
-            cryogenic integration, measurement automation, modeling, troubleshooting, and analysis. I am most at home
-            where device physics meets the practical work of making a complex experiment reliable.
-          </p>
-        </div>
-        <div class="stats-grid reveal">
-          <article class="stat-card"><strong>5+</strong><span>years in experimental quantum hardware</span></article>
-          <article class="stat-card"><strong>&gt;10M</strong><span>mechanical quality factor measured</span></article>
-          <article class="stat-card"><strong>&lt;250 mK</strong><span>cryogenic device measurement platform</span></article>
-          <article class="stat-card"><strong>4</strong><span>peer-reviewed publications, plus current work in preparation</span></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="experience">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Experience</p>
-        <h2>A trajectory through quantum optics, sensing, and experimental systems.</h2>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-marker"></div>
-          <div class="timeline-meta">
-            <span>Oct 2020 — Present</span>
-            <span>Santa Barbara, CA</span>
-          </div>
-          <div class="timeline-content">
-            <h3>Graduate Student Researcher</h3>
-            <p class="organization">University of California, Santa Barbara · Advisor: Prof. Ania C. Bleszynski Jayich</p>
-            <ul>
-              <li>Designed, built, and optimized fiber and free-space optical systems integrating lasers, photodetectors, AOMs, EOMs, RF electronics, and synchronized control hardware.</li>
-              <li>Characterized diamond optomechanical devices with mechanical quality factors above 10 million and developed models for performance-limiting mechanisms including optical-absorption-induced heating.</li>
-              <li>Built out and commissioned a dilution-refrigerator measurement platform with cryogenic optical, RF, DC, and positioning hardware for measurements below 250 mK.</li>
-              <li>Demonstrated quantum ground-state operation of GHz-frequency diamond optomechanical devices using direct thermometry.</li>
-              <li>Developed a modular Python control and data-acquisition framework for automated characterization, closed-loop control, synchronized measurements, and parameter extraction.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-marker"></div>
-          <div class="timeline-meta">
-            <span>May 2019 — Aug 2019</span>
-            <span>Canberra, Australia</span>
-          </div>
-          <div class="timeline-content">
-            <h3>Undergraduate Research Scholar</h3>
-            <p class="organization">Research School of Physics, Australian National University · Advisor: Prof. Marcus W. Doherty</p>
-            <ul>
-              <li>Designed hardware and software to control a custom 3D vector electromagnet aligned with a confocal microscope for magnetometry experiments.</li>
-              <li>Implemented and automated a 3D magnetic-field sweep protocol to determine individual NV-center crystallographic orientations from ODMR spectroscopy.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="timeline-marker"></div>
-          <div class="timeline-meta">
-            <span>May 2018 — Dec 2018</span>
-            <span>Chennai, India</span>
-          </div>
-          <div class="timeline-content">
-            <h3>Undergraduate Student Researcher</h3>
-            <p class="organization">Indian Institute of Technology Madras · Advisor: Prof. Basudev Roy</p>
-            <ul>
-              <li>Built and integrated a quadrant-photodiode detection and acquisition system for a microscope-based optical tweezer platform.</li>
-              <li>Built a LabVIEW interface for automated data acquisition, storage, and analysis.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="skills">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Professional skills</p>
-        <h2>An experimentalist’s toolkit.</h2>
-      </div>
-      <div class="skill-grid">
-        <article class="skill-card reveal">
-          <span class="skill-index">01</span><h3>Optics & Photonics</h3>
-          <p>Fiber and free-space optics · telecom and visible components · tunable lasers · photodetectors · AOMs · EOMs · optical switching · laser-cavity locking · power stabilization</p>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-index">02</span><h3>Cryogenics</h3>
-          <p>Dilution refrigerators · 4 K helium cryostats · cryogenic optical / RF / DC integration · low-temperature device characterization</p>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-index">03</span><h3>Instrumentation & Control</h3>
-          <p>DAQs · oscilloscopes · spectrum analyzers · RF/microwave electronics · digital pulse generation · instrument-control APIs · synchronized measurements</p>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-index">04</span><h3>Programming & Automation</h3>
-          <p>Python · NumPy · SciPy · Pandas · nidaqmx · Matplotlib · PyQt5 · tkinter · Git · C++ · LabVIEW · automated acquisition · feedback control</p>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-index">05</span><h3>Modeling & Simulation</h3>
-          <p>COMSOL Multiphysics · MATLAB · finite-element simulation · quantitative modeling · parameter extraction · experimental fitting and model comparison</p>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-index">06</span><h3>Electronics & Hardware</h3>
-          <p>Circuit design and debugging · soldering · PCB assembly · instrumentation interfacing · analog/digital troubleshooting · milling · lathe · drilling</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="research">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Selected research</p>
-        <h2>From nanomechanical devices to complete measurement systems.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-art project-art-omc" aria-hidden="true">
-            <div class="device-line"></div><div class="device-line second"></div><div class="device-dot one"></div><div class="device-dot two"></div>
-          </div>
-          <div class="project-body">
-            <p class="project-kicker">Diamond optomechanics</p>
-            <h3>High-Q optomechanical devices in the quantum regime</h3>
-            <p>Designed and executed cryogenic characterization of diamond optomechanical devices, measuring mechanical quality factors greater than 10 million and identifying optical-absorption-induced heating as a performance-limiting mechanism.</p>
-            <div class="project-metrics"><span>Q<sub>m</sub> &gt; 10<sup>7</sup></span><span>GHz mechanics</span><span>Cryogenic characterization</span></div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-body">
-            <p class="project-kicker">Cryogenic quantum measurement</p>
-            <h3>Ground-state operation and direct thermometry</h3>
-            <p>Built and commissioned a dilution-refrigerator measurement platform integrating cryogenic optical, RF, DC, and positioning hardware, and demonstrated ground-state operation of GHz-frequency diamond optomechanical devices.</p>
-            <div class="project-metrics"><span>&lt;250 mK platform</span><span>Direct thermometry</span></div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-body">
-            <p class="project-kicker">Experimental software</p>
-            <h3>Modular automation for complex experiments</h3>
-            <p>Developed a Python framework that integrates lasers, RF/microwave electronics, DAQs, cryogenic instrumentation, and optical hardware for closed-loop control, synchronized acquisition, automated characterization, and parameter extraction.</p>
-            <div class="project-metrics"><span>Python</span><span>Instrument APIs</span><span>Closed-loop control</span></div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-body">
-            <p class="project-kicker">NV-center magnetometry</p>
-            <h3>Automated 3D magnetic-field control and ODMR</h3>
-            <p>Designed hardware/software control for a custom vector electromagnet and automated a 3D field-sweep protocol to determine crystallographic orientations of individual NV centers from ODMR measurements.</p>
-            <div class="project-metrics"><span>NV centers</span><span>ODMR</span><span>3D field control</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="publications">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Publications</p>
-        <h2>Selected peer-reviewed work.</h2>
-      </div>
-      <div class="publication-list">
-        <article class="publication reveal">
-          <span class="pub-num">01</span>
-          <div><h3>Ground-state operation of diamond optomechanical crystals</h3><p><strong>V. Dharod et al.</strong> · Manuscript in preparation</p></div>
-        </article>
-        <a class="publication reveal" href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-13-3-485" target="_blank" rel="noopener">
-          <span class="pub-num">02</span>
-          <div><h3>Spin-embedded diamond optomechanical resonator with a mechanical quality factor exceeding one million</h3><p>H. Oh†, <strong>V. Dharod†</strong>, C. Padgett†, et al. · <em>Optica</em> 13, 485–490 (2026) · † Co-first authors</p></div><span class="pub-arrow">↗</span>
-        </a>
-        <a class="publication reveal" href="https://doi.org/10.1063/5.0285138" target="_blank" rel="noopener">
-          <span class="pub-num">03</span>
-          <div><h3>Integrated phononic waveguide on thin-film lithium niobate on diamond</h3><p>S. Malik, F. M. Mayor, W. Jiang, H. Oh, C. Padgett, <strong>V. Dharod</strong>, et al. · <em>Applied Physics Letters</em> 127, 154001 (2025)</p></div><span class="pub-arrow">↗</span>
-        </a>
-        <a class="publication reveal" href="https://doi.org/10.1103/PhysRevLett.130.093603" target="_blank" rel="noopener">
-          <span class="pub-num">04</span>
-          <div><h3>Single-spin readout and quantum sensing using optomechanically induced transparency</h3><p>M. Koppenhöfer, C. Padgett, J. V. Cady, <strong>V. Dharod</strong>, et al. · <em>Physical Review Letters</em> 130, 093603 (2023)</p></div><span class="pub-arrow">↗</span>
-        </a>
-        <a class="publication reveal" href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-27-22-31900" target="_blank" rel="noopener">
-          <span class="pub-num">05</span>
-          <div><h3>Detection of self-generated nanowaves on the interface of an evaporating sessile water droplet</h3><p>D. Bhatt, R. Vaippully, B. Kharbanda, et al., <strong>V. Dharod</strong>, et al. · <em>Optics Express</em> 27, 31900–31912 (2019)</p></div><span class="pub-arrow">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="education">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Education</p>
-        <h2>Physics, engineering, and applied mathematics.</h2>
-      </div>
-      <div class="education-grid">
-        <article class="education-card reveal">
-          <span class="school-mark">UCSB</span>
-          <div><p class="date">2020 — Dec 2026 expected</p><h3>University of California, Santa Barbara</h3><p>Ph.D. Candidate, Physics</p><p>M.A., Physics · 2023</p><p class="advisor">Advisor: Prof. Ania C. Bleszynski Jayich</p></div>
-        </article>
-        <article class="education-card reveal">
-          <span class="school-mark">IITR</span>
-          <div><p class="date">2016 — 2020</p><h3>Indian Institute of Technology Roorkee</h3><p>B.Tech., Engineering Physics</p><p>Minor in Applied Mathematics</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="awards">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Honors & awards</p>
-        <h2>Recognition across research and academics.</h2>
-      </div>
-      <div class="award-list reveal">
-        <div><span>2020 — 2026</span><strong>Quantum Foundry Associateship</strong></div>
-        <div><span>2020</span><strong>IIT Roorkee Heritage Foundation Excellence Award</strong></div>
-        <div><span>2020</span><strong>ThinkSwiss Research Scholarship Award</strong></div>
-        <div><span>2019</span><strong>Chennupati and Vidya Jagadish Endowment Scholarship Award</strong></div>
-        <div><span>2018</span><strong>National Graduate Physics Examination Gold Medal</strong></div>
-      </div>
-    </section>
-
-    <section class="section-shell contact-section" id="contact">
-      <div class="contact-card reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s build the next generation of quantum hardware.</h2>
-        <p>I am interested in experimental quantum hardware, quantum optics, photonics, and systems engineering roles where deep physics and hands-on engineering meet.</p>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:dharodviraj@gmail.com">dharodviraj@gmail.com</a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/viraj-dharod-436347167/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="button button-secondary" href="https://scholar.google.com/citations?user=QQZvT2IAAAAJ" target="_blank" rel="noopener">Scholar ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-shell">
-    <span>Viraj Dharod · Experimental Quantum Physicist</span>
-    <a href="#top">Back to top ↑</a>
-  </footer>
-
-  <script src="script.js"></script>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">Viraj Dharod · Experimental Quantum Physicist</footer>
+<script src="script.js"></script>
 </body>
 </html>

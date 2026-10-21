@@ -1,44 +1,36 @@
-# Viraj Dharod — Personal Portfolio
+# Viraj Dharod — Personal Website
 
-A static one-page portfolio designed for GitHub Pages. No build step or framework is required.
+Static multi-page portfolio designed for GitHub Pages. No framework or build step is required.
+
+## Site structure
+
+- `index.html` — About page and landing page
+- `experience.html` — Experience
+- `research.html` — Research & Publications
+- `education.html` — Education
+- `contact.html` — Contact
+- `blogs.html` — Blogs placeholder
+- `styles.css` — Shared visual design
+- `script.js` — Mobile navigation and portrait fallback
+- `assets/Viraj_Dharod_Resume.pdf` — Résumé
+- `assets/favicon.svg` — Browser icon
+
+## Add your portrait
+
+Put your portrait in the **repository root** (next to `index.html`) with either of these names:
+
+- `self.png` — checked first
+- `self.jpg` — used automatically if `self.png` is not found
+
+A neutral placeholder appears if neither file exists.
 
 ## Publish with GitHub Pages
 
-1. Create a new GitHub repository. For the cleanest URL, name it `<your-github-username>.github.io`.
-2. Upload **all files in this folder** to the repository root.
-3. Commit and push to the `main` branch.
-4. In GitHub, open **Settings → Pages**.
+1. Create a GitHub repository. For a root personal site, name it `<your-github-username>.github.io`.
+2. Upload all files in this folder to the repository root.
+3. Commit and push to `main`.
+4. Go to **Settings → Pages**.
 5. Under **Build and deployment**, choose **Deploy from a branch**.
 6. Select `main` and `/ (root)`, then save.
 
-GitHub will publish the site at `https://<your-github-username>.github.io/`.
-
-If you use a normal repository name such as `portfolio`, GitHub Pages can publish it under `https://<username>.github.io/portfolio/`. The included site uses relative paths, so it works in either setup.
-
-## Files
-
-- `index.html` — page content and section structure
-- `styles.css` — visual design and responsive layout
-- `script.js` — mobile navigation and subtle scroll reveals
-- `assets/Viraj_Dharod_Resume.pdf` — résumé linked from the hero section
-- `assets/favicon.svg` — browser icon
-
-## Easy edits
-
-### Change text
-Edit `index.html` in any text editor.
-
-### Replace or update the résumé
-Overwrite `assets/Viraj_Dharod_Resume.pdf` with the new PDF, keeping the same filename.
-
-### Add a portrait
-The current hero intentionally uses a custom abstract quantum/photonics visual, so the site is complete without a photo. If you want a portrait similar to the reference site, add your image to `assets/` and replace the `.hero-visual` block in `index.html` with an `<img>` tag, or ask ChatGPT to make the edit for you.
-
-### Change colors
-The main design tokens are at the top of `styles.css` under `:root`.
-
-## Notes
-
-- LinkedIn and Google Scholar URLs were pulled from the hyperlinks embedded in the provided résumé.
-- Publication URLs were also pulled from the résumé where available.
-- The site is plain HTML/CSS/JS, so it is easy to customize and has no dependency on a JavaScript framework.
+The site uses relative links and also works from a project repository such as `https://<username>.github.io/portfolio/`.

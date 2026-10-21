@@ -6,20 +6,23 @@ menuButton?.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', String(open));
 });
 
-document.querySelectorAll('.nav-links a').forEach(link => {
+document.querySelectorAll('.nav-links a').forEach((link) => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     menuButton?.setAttribute('aria-expanded', 'false');
   });
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+// About-page portrait: use self.png if present, then self.jpg.
+const portrait = document.getElementById('profile-image');
+if (portrait) {
+  let triedJpg = false;
+  portrait.addEventListener('error', () => {
+    if (!triedJpg) {
+      triedJpg = true;
+      portrait.src = 'self.jpg';
+    } else {
+      portrait.closest('.portrait-frame')?.classList.add('image-missing');
     }
   });
-}, { threshold: 0.08, rootMargin: '0px 0px -25px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
